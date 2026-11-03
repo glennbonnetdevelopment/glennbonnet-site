@@ -151,3 +151,45 @@ details p { margin-bottom: 0; }
 .app-icon.small { width: 40px; height: 40px; margin-bottom: 0; }
 .app-heading { display: flex; align-items: center; gap: 14px; }
 
+
+/* App pages */
+.app-hero { padding: 56px 0 72px; }
+.back { display: inline-block; color: var(--muted); font-weight: 500; font-size: 0.95rem; margin-bottom: 28px; }
+.back:hover { color: var(--text); }
+.app-hero-top { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.app-icon.large { width: 120px; height: 120px; margin-bottom: 0; }
+.app-hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 800; letter-spacing: -0.035em; line-height: 1.1; }
+.tagline { color: var(--accent); font-size: 1.25rem; font-weight: 600; margin-top: 4px; }
+.platforms { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.platforms span { font-size: 0.8rem; font-weight: 600; color: var(--muted); border: 1px solid var(--border); padding: 3px 10px; border-radius: 999px; }
+.intro { color: var(--muted); font-size: 1.15rem; max-width: 680px; margin: 28px 0 32px; }
+.btns.left { justify-content: flex-start; }
+.shots-section { padding-bottom: 70px; }
+.shots {
+  display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 8px 4px 22px; margin-top: 28px; -webkit-overflow-scrolling: touch;
+}
+.shots figure { flex: 0 0 240px; scroll-snap-align: start; margin: 0; }
+.shots img {
+  width: 100%; height: auto; display: block; border-radius: 26px;
+  border: 1px solid var(--border); box-shadow: 0 14px 34px -18px rgba(0,0,0,.45); background: var(--card);
+}
+.shots figure.watch { flex-basis: 200px; align-self: center; }
+.shots figure.watch img { border-radius: 40px; background: #000; }
+.shots figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 12px; text-align: center; }
+.privacy-note { margin-top: 40px; }
+.privacy-note p { color: var(--text); margin-bottom: 16px; }
+.privacy-note .btn { display: inline-block; }
+.more-apps { padding: 56px 0; border-top: 1px solid var(--border); }
+.mini-grid { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; }
+.mini {
+  display: flex; align-items: center; gap: 12px; font-weight: 600;
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 10px 18px 10px 10px;
+  transition: border-color .2s, transform .2s;
+}
+.mini:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+/* Home page app cards link to app pages */
+a.card { display: block; }
+.more { display: inline-block; margin-top: 14px; color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+[id] { scroll-margin-top: 80px; }
