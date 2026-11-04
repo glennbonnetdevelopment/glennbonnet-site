@@ -200,3 +200,8 @@ a.card { display: block; }
 .card-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
 .card-actions .more { margin-top: 0; }
 .btn-appstore.small { padding: 8px 14px; font-size: 0.85rem; gap: 7px; }
+
+/* Home page: apps first */
+.apps-top { padding: 72px 0 90px; }
+.apps-title { font-size: clamp(2.2rem, 5.5vw, 3.4rem); font-weight: 800; letter-spacing: -0.035em; line-height: 1.1; margin-bottom: 18px; }
+@media (max-width: 720px) { .apps-top { padding: 48px 0 64px; } .apps-title br { display: none; } }
