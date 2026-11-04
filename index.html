@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -43,12 +43,15 @@
       <h2>Featured apps</h2>
       <p class="lead">A selection of apps I've designed, built and shipped.</p>
       <div class="grid">
-        <a class="card" href="driversaver.html">
-          <div class="app-icon"><img src="images/driversaver.png" alt="DriverSaver app icon" width="72" height="72"></div>
-          <h3>DriverSaver</h3>
+        <div class="card">
+          <a href="driversaver.html" class="app-icon" style="display:block"><img src="images/driversaver.png" alt="DriverSaver app icon" width="72" height="72"></a>
+          <h3><a href="driversaver.html">DriverSaver</a></h3>
           <p>Track expenses and fuel for your vehicles and machinery, all in one place — so you always know what they really cost to run.</p>
-          <span class="more">Learn more →</span>
-        </a>
+          <div class="card-actions">
+            <a href="driversaver.html" class="more">Learn more →</a>
+            <a href="https://apps.apple.com/ca/app/driversaver/id6814282412" class="btn btn-appstore small" target="_blank" rel="noopener">Purchase now</a>
+          </div>
+        </div>
         <a class="card" href="rise-in-abundance.html">
           <div class="app-icon"><img src="images/rise-in-abundance.png" alt="Rise In Abundance app icon" width="72" height="72"></div>
           <h3>Rise In Abundance</h3>
